@@ -5,7 +5,15 @@ class Home extends Component {
   render() {
     return (
       <div className="App">
-      <h1> Hello World</h1>
+        <div className="name-picture-container">
+          <img className="front-page-profile-image"
+            src="../public/Beth-Photo-2.jpg"
+            alt="beth-profile"
+
+            />
+          <h5 className="large-name"> // Beth Barnes </h5>
+
+        </div>
       </div>
     );
   }
