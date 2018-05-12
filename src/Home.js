@@ -21,7 +21,8 @@ class Home extends Component {
         </div>
         <div className="btn-container">
         <Link to='./about'>
-          <button className="front-btn">About</button>
+          <button className="front-btn">
+          About</button>
         </Link>
           <button className="front-btn">Projects</button>
           <button className="front-btn">Contact</button>
