@@ -5,7 +5,7 @@ import './App.css';
 class Home extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="home">
         <div className="name-picture-container">
           <div className="name-picture-item">
             <img className="front-page-profile-image"
@@ -19,9 +19,9 @@ class Home extends Component {
           </div>
         </div>
         <div className="btn-container">
-          <button className="btn">About</button>
-          <button className="btn">Projects</button>
-          <button className="btn">Contact</button>
+          <button className="front-btn">About</button>
+          <button className="front-btn">Projects</button>
+          <button className="front-btn">Contact</button>
         </div>
       </div>
     );
