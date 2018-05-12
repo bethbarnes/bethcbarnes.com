@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-// import beth from './beth-photo.jpg'
+import { Link } from 'react-router-dom'
+import About from './About.js'
 
 class Home extends Component {
   render() {
@@ -19,7 +20,9 @@ class Home extends Component {
           </div>
         </div>
         <div className="btn-container">
+        <Link to='./about'>
           <button className="front-btn">About</button>
+        </Link>
           <button className="front-btn">Projects</button>
           <button className="front-btn">Contact</button>
         </div>

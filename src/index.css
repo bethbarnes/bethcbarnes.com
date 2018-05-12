@@ -1,11 +1,14 @@
-* {
+/* * {
   border-style: solid;
   border-width: 2px;
-}
+} */
 
 html {
   background: linear-gradient(#ade3ff, #fcf8cf);
-  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 body {
@@ -17,7 +20,7 @@ body {
 
 .name-picture-container {
   padding: 0;
-  margin: 0;
+  margin: 30px 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -29,7 +32,7 @@ body {
 
 .front-page-profile-image {
   border-radius: 50%;
-  width: 250px;
+  width: 200px;
 }
 
 .large-name {
