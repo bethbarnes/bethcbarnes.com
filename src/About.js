@@ -5,6 +5,7 @@ import Navbar from './Navbar'
 // import beth from './beth-photo.jpg'
 
 
+
 class About extends Component {
   render() {
     return (
