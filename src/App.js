@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
 import { Home } from './index'
 import { BrowserRouter, Route } from 'react-router-dom'
 import About from './About'

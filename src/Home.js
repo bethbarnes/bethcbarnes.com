@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
 import { Link } from 'react-router-dom'
-import About from './About.js'
+import { About } from './index.js'
 
 //TODO: add transition to next pages
+//add shadow on hover or transition duration to buttons
 
 //TODO: some sort of fade in with my name and pick and stuff
 

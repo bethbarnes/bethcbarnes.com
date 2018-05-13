@@ -17,6 +17,17 @@ body {
   font-family: sans-serif;
 }
 
+.navbar {
+  margin: 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-test {
+  margin: 0px;
+  padding: 0px;
+}
+
 .inner-white-container {
   background-color: #eff2f7;
   width: 80vw;
@@ -82,7 +93,6 @@ body {
   cursor: pointer;
   border-radius: 5px;
 }
-
 .front-btn:hover {
   background: #e7e7e7;
   /* color: white; */
