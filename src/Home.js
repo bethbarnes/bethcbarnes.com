@@ -5,6 +5,8 @@ import About from './About.js'
 
 //TODO: add transition to next pages
 
+//TODO: some sort of fade in with my name and pick and stuff
+
 class Home extends Component {
   render() {
     return (
