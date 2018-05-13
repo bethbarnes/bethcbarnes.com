@@ -3,6 +3,8 @@
   border-width: 2px;
 } */
 
+/* #eff2f7 */
+
 html {
   background: linear-gradient(#ade3ff, #fcf8cf);
   display: flex;
@@ -17,58 +19,12 @@ body {
   font-family: sans-serif;
 }
 
-.navbar {
-  margin: 0px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.nav-test {
-  margin: 0px;
-  padding: 0px;
-}
-
-.inner-white-container {
-  background-color: #eff2f7;
-  width: 80vw;
-  height: 85vh;
-  position: relative;
-}
-
-.desktop-image {
-  width: 650px;
+.about-header {
+  font-size: 65px;
+  left: 75px;
   position: absolute;
-  top: 130px;
-  right: 35px;
-  opacity: 0.8;
-  /* z-index: -1; */
+  z-index: 1;
 }
-
-.name-picture-container {
-  padding: 0;
-  margin: 30px 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-
-.link:hover {
-  color: white
-}
-
-.link {
-  color: black;
-}
-
-.nav-link {
-  margin: 5px 15px 0px 0px;
-  text-decoration: none; color:#000;
-  /* padding: 20px; */
-}
-
-.nav-link:visited { text-decoration: none; color:#000; }
-.nav-link:hover { text-decoration: none; color:white; }
 
 .about-me-text {
   position: absolute;
@@ -81,23 +37,18 @@ body {
   padding: 20px;
 }
 
-.name-picture-item {
-  padding: 20px
-}
-
-.front-page-profile-image {
-  border-radius: 50%;
-  width: 200px;
-}
-
-.large-name {
-  font-size: 50px
-}
-
 .btn-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.desktop-image {
+  width: 650px;
+  position: absolute;
+  top: 130px;
+  right: 35px;
+  opacity: 0.8;
 }
 
 .front-btn {
@@ -116,15 +67,62 @@ body {
   /* color: white; */
 }
 
-.about-header {
-  font-size: 65px;
-  left: 75px;
-  position: absolute;
-  z-index: 1;
+.front-page-profile-image {
+  border-radius: 50%;
+  width: 200px;
 }
 
 .gray-border {
   border-style: solid;
   border-width: 2px;
   border-color: #c7c9cc;
+}
+
+.inner-white-container {
+  background-color: #eff2f7;
+  width: 80vw;
+  height: 85vh;
+  position: relative;
+}
+
+.large-name {
+  font-size: 50px
+}
+
+.link-btn:hover {
+  color: #eff2f7;
+}
+
+.link-btn {
+  color: black;
+  text-decoration: none;
+  margin: 5px 15px 5px 0px;
+}
+
+.link-btn:visited {
+  text-decoration: none;
+  color:#000;
+}
+
+.name-picture-container {
+  padding: 0;
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.name-picture-item {
+  padding: 20px
+}
+
+.navbar {
+  margin: 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-test {
+  margin: 0px;
+  padding: 0px;
 }
