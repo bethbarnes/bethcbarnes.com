@@ -17,8 +17,8 @@ class Navbar extends Component {
         </Link>
       </div>
       <div className="nav-link">
-        <Link to='/portfolio'>
-          portfolio
+        <Link to='/projects'>
+          projects
         </Link>
       </div>
       <div className="nav-link">

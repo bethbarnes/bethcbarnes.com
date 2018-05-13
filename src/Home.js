@@ -27,8 +27,12 @@ class Home extends Component {
           <button className="front-btn">
           About</button>
         </Link>
+        <Link to='./projects'>
           <button className="front-btn">Projects</button>
+        </Link>
+        <Link to='./contact' >
           <button className="front-btn">Contact</button>
+        </Link>
         </div>
       </div>
     );

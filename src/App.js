@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
-import { Home } from './index'
+import { Home, About, Projects, Contact } from './index'
 import { BrowserRouter, Route } from 'react-router-dom'
-import About from './About'
 
 class App extends Component {
   render() {
@@ -12,6 +11,8 @@ class App extends Component {
         <div>
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About}/>
+          <Route path='/projects' component={Projects} />
+          <Route path='/contact' component={Contact} />
         </div>
       </ BrowserRouter>
       </div>
@@ -19,4 +20,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App
