@@ -89,21 +89,6 @@ body {
   font-size: 50px
 }
 
-.link-btn:hover {
-  color: #eff2f7;
-}
-
-.link-btn {
-  color: black;
-  text-decoration: none;
-  margin: 5px 15px 5px 0px;
-}
-
-.link-btn:visited {
-  text-decoration: none;
-  color:#000;
-}
-
 .name-picture-container {
   padding: 0;
   margin: 30px 0px;
@@ -122,7 +107,17 @@ body {
   justify-content: flex-end;
 }
 
-.nav-test {
-  margin: 0px;
-  padding: 0px;
+.navbar-link:hover {
+  color: #eff2f7;
+}
+
+.navbar-link {
+  color: black;
+  text-decoration: none;
+  margin: 5px 15px 5px 0px;
+}
+
+.navbar-link:visited {
+  text-decoration: none;
+  color:#000;
 }

@@ -5,9 +5,11 @@ import { Navbar } from './index'
 class Contact extends Component{
   render(){
     return (
-      <div>
+      <div className="contact">
         <Navbar />
-        <h1> Contact</h1>
+          <div className="inner-white-container gray-border">
+            <h1> Contact</h1>
+          </div>
       </div>
     )
   }

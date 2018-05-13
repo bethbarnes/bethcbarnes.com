@@ -5,9 +5,11 @@ import { Navbar } from './index'
 class Projects extends Component{
   render(){
     return (
-      <div>
+      <div className="projects">
         <Navbar />
-        <h1> Projects</h1>
+        <div className="inner-white-container gray-border" >
+          <h1> Projects</h1>
+        </div>
       </div>
     )
   }
