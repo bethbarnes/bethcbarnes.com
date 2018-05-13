@@ -3,6 +3,8 @@ import './App.css';
 import { Link } from 'react-router-dom'
 import About from './About.js'
 
+//TODO: add transition to next pages
+
 class Home extends Component {
   render() {
     return (

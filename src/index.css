@@ -21,6 +21,17 @@ body {
   background-color: #eff2f7;
   width: 80vw;
   height: 85vh;
+  position: relative;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #c7c9cc;
+}
+
+.desktop-image {
+  width: 650px;
+  position: absolute;
+  top: 110px;
+  right: 35px;
 }
 
 .name-picture-container {
@@ -67,6 +78,6 @@ body {
   /* color: white; */
 }
 
-.desktop-image {
-  width: 650px;
+.about-header {
+  font-size: 50px;
 }

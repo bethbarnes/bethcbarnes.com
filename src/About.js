@@ -9,7 +9,7 @@ class About extends Component {
     return (
       <div className="About">
         <div className="inner-white-container">
-          <h1> Made it to about </h1>
+          <h2 className="about-header"> {'//Hello World'} </h2>
           <img className="desktop-image"
                 alt="desktop"
                 src="/desktop-image.jpg"/>
