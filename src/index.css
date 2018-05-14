@@ -204,9 +204,27 @@ body {
   left: 270px;
 }
 
-.test{
+.test {
   text-align: center;
   display: inline;
   margin: 0px 10px 20px 10px;
 }
 
+.contact-types {
+  color: #56a095;
+  font-size: 18px;
+}
+.contact-info-container h3 {
+  font-size: 14px;
+}
+.contact-info-container h4 {
+
+}
+
+.contact-info-container {
+  text-align: left;
+  width: 300px;
+  position: absolute;
+  top: 150px;
+  left: 600px;
+}
