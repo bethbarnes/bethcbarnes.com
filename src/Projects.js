@@ -1,27 +1,32 @@
 import React, { Component } from 'react'
 import './App.css'
 import { Navbar } from './index'
+import projectData from './Data.js'
+
 
 class Projects extends Component {
   render() {
+    console.log('data', projectData)
     return (
       <div className="projects">
         <Navbar />
         <div className="inner-white-container gray-border" >
-          <div className="project-container gray-border" >
+        {projectData.map((project)=> {
+          return (
+            <div key={project.id}className="project-container gray-border" >
             <div className="project-header">
-              <h1 className="project-title" >Project Name</h1>
+              <h1 className="project-title">{project.name}</h1>
             </div>
             <div className="proj-desc-container">
-              <h1>Description: </h1>
+              <h1 className="proj-section-title" >Description: </h1>
               <p className="project-description">
-                The Network is a professional networking website that I built with a group as our Capstone project for Fullstack Academy. The Network is a Progressive Web App created using mobile-first responsive design, and styled with Semantic UI and CSS. The Network’s frontend was built using modular React components and React-Redux. It's integrated with multiple APIs such as Google Maps, Google Places, and React Big Calendar. Data is stored using Google Cloud Firestore which enables a flexible, scalable, and real-time database.
+                {project.description}
             </p>
             </div>
             <div className="proj-desc-container">
-              <h1>Technologies Used: </h1>
+              <h1 className="proj-section-title" >Technologies Used: </h1>
               <p className="project-description">
-                Cloud Firestore, Mobile-First Design, React-Redux, Google Maps API, Semantic UI
+                {project.technologies}
             </p>
             </div>
             <div className="proj-images-container">
@@ -35,11 +40,20 @@ class Projects extends Component {
                 src='/network-feed.png'
                 alt='network alumni'/>
             </div>
+            <div className="proj-links-container" >
+            <a className= "test" href={project.github}>
+              Github</a>
+              <a className= "test" href={project.deployed}>
+              Deployed Site</a>
+              <a className= "test" href={project.video}>
+              Video Presentation</a>
+            </div>
           </div>
+          )
+        })}
+
         </div>
-
       </div>
-
     )
   }
 }

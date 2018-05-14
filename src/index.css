@@ -127,7 +127,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 500px;
+  /* height: 500px; */
 }
 
 .project-header {
@@ -153,7 +153,28 @@ body {
   margin-left: 20px;
 }
 
+.proj-images-container {
+  margin: 20px;
+}
+
 .proj-image {
-  height: 200px;
+  height: 150px;
   margin: 0px 20px
+}
+
+.proj-section-title {
+  font-size: 20px;
+}
+
+.proj-links-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  justify-content: center
+}
+
+.test{
+  text-align: center;
+  display: inline;
+  margin: 0px 10px 20px 10px;
 }
