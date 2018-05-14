@@ -6,10 +6,11 @@ class Contact extends Component{
   render(){
     return (
       <div className="contact">
-        <Navbar />
-        <div className="inner-white-container gray-border">
-          <h1> Contact</h1>
-        </div>
+        <h1 className="contact-text" >CONTACT</h1>
+        <h4> EMAIL: </h4>
+        <h4> RESUME: </h4>
+        <i class="fa fa-car"></i>
+
       </div>
     )
   }

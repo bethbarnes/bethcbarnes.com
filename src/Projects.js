@@ -9,7 +9,6 @@ class Projects extends Component {
     console.log('data', projectData)
     return (
       <div className="projects">
-        <Navbar />
         <div className="inner-white-container gray-border" >
         {projectData.map((project)=> {
           return (

@@ -10,7 +10,6 @@ class About extends Component {
   render() {
     return (
       <div className="About">
-      <Navbar />
         <div className="inner-white-container gray-border">
           <h2 className="about-header"> {'// Hello World'} </h2>
           <img className="desktop-image"
