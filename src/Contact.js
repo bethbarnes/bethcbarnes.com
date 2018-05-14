@@ -7,9 +7,9 @@ class Contact extends Component{
     return (
       <div className="contact">
         <Navbar />
-          <div className="inner-white-container gray-border">
-            <h1> Contact</h1>
-          </div>
+        <div className="inner-white-container gray-border">
+          <h1> Contact</h1>
+        </div>
       </div>
     )
   }

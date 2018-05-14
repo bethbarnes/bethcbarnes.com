@@ -121,3 +121,39 @@ body {
   text-decoration: none;
   color:#000;
 }
+
+.project-container {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 500px;
+}
+
+.project-header {
+  background-color: #b8c1d1;
+  height: 30px;
+}
+
+.project-title {
+  padding: 0px;
+  margin: 0px 10px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.proj-desc-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 20px
+}
+
+.project-description {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.proj-image {
+  height: 200px;
+  margin: 0px 20px
+}
