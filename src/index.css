@@ -1,7 +1,9 @@
-* {
+/* * {
   border-style: solid;
   border-width: 2px;
-}
+} */
+
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 
 /* #eff2f7 */
 
@@ -191,12 +193,15 @@ body {
 
 .small-icon {
   font-size: 50px;
+  margin: 0px 10px;
+  text-decoration: none;
+  color: black
 }
 
 .icon-container {
   position: absolute;
   top: 230px;
-  left: 330px;
+  left: 270px;
 }
 
 .test{
@@ -204,3 +209,4 @@ body {
   display: inline;
   margin: 0px 10px 20px 10px;
 }
+

@@ -10,8 +10,12 @@ class Contact extends Component{
         <h4> EMAIL: </h4>
         <h4> RESUME: </h4>
         <div className="icon-container">
+        <a href="https://github.com/bethbarnes" >
           <i class="fa fa-github small-icon"></i>
-          <i class="fa fa-linkedin small-icon"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/bethcbarnes/" >
+          <i class="fa fa-linkedin-square small-icon"></i>
+        </a>
         </div>
       </div>
     )
