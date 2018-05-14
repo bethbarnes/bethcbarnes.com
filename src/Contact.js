@@ -9,8 +9,10 @@ class Contact extends Component{
         <h1 className="contact-text" >CONTACT</h1>
         <h4> EMAIL: </h4>
         <h4> RESUME: </h4>
-        <i class="fa fa-car"></i>
-
+        <div className="icon-container">
+          <i class="fa fa-github small-icon"></i>
+          <i class="fa fa-linkedin small-icon"></i>
+        </div>
       </div>
     )
   }
