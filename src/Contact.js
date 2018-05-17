@@ -10,7 +10,10 @@ class Contact extends Component {
         <div className="contact-info-container" >
           <h4 className="contact-types"> EMAIL: </h4>
           <h3> bethcbarnes@outlook.com </h3>
-          <h4 className="contact-types"> RESUME: </h4>
+        </div>
+        <div className="contact-info-container" >
+          <h4 className="contact-types"> PHONE: </h4>
+          <h3>315.520.4376</h3>
         </div>
         <div className="icon-container">
           <a href="https://github.com/bethbarnes" >

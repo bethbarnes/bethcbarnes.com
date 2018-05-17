@@ -12,7 +12,7 @@ class Home extends Component {
       <div className="home">
         <div className="name-picture-container">
           <div className="name-picture-item">
-            <img className="front-page-profile-image"
+            <img className="front-page-profile-image gray-border"
               src='/beth-photo.jpg'
               alt="beth-profile"
             />

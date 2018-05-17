@@ -12,7 +12,7 @@ class About extends Component {
       <div className="About">
         <div className="inner-white-container gray-border">
           <h2 className="about-header"> {'// Hello World'} </h2>
-          <img className="desktop-image"
+          <img className="desktop-image gray-border"
                 alt="desktop"
                 src="/desktop-image.jpg"/>
           <p className="about-me-text gray-border">
