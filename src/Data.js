@@ -14,7 +14,7 @@ const projectData =[
     name: "ApARtment Picker",
     description: "ApARtment Picker is a React Native mobile app for viewing apartments in Augmented Reality. The app was built using ViroReact, a platform for building AR/VR apps in React Native. My role was to use ViroReact to render 3D Portals in Augmented Reality, which users can walk through to view 360 degree images of apartments that matched their search criteria.",
     technologies: "React, React Native, Redux, ViroReact, Material UI ",
-    images: ['/network-alumni.png', '/network-map.png', 'network alumni'],
+    images: ['/home-image.png', '/3D-object-image.png', 'portal-image.png'],
     github: 'https://github.com/djxr35/ARtathon',
     video: 'https://www.youtube.com/watch?v=bGUN9zSSJIw',
   },
