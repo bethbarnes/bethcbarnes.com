@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './App.css'
-import { Navbar } from './index'
 import projectData from './Data.js'
 
 
@@ -27,24 +26,29 @@ class Projects extends Component {
                 {project.technologies}
             </p>
             </div>
-            <div className="proj-images-container">
-              <img className="proj-image gray-border"
-                src='/network-alumni.png'
-                alt='network alumni'/>
-              <img className="proj-image gray-border"
-                src='/network-map.png'
-                alt='network alumni'/>
-              <img className="proj-image gray-border"
-                src='/network-feed.png'
-                alt='network alumni'/>
-            </div>
+            {project.images ? <div className="proj-images-container">
+              {project.images.map((image)=>{
+                return (<img
+                key={image}
+                className="proj-image gray-border"
+                src={image}
+                alt={`${project.name} + ${image}`}/>)
+              })}
+
+
+            </div> : <div></div>}
+
             <div className="proj-links-container" >
             <a className= "project-links" href={project.github}>
               Github</a>
-              <a className= "project-links" href={project.deployed}>
+            {project.deployed
+              ? <a className= "project-links" href={project.deployed}>
               Deployed Site</a>
-              <a className= "project-links" href={project.video}>
+              : <div></div>}
+            {project.video
+            ? <a className= "project-links" href={project.video}>
               Video Presentation</a>
+            : <div></div>}
             </div>
           </div>
           )

@@ -1,10 +1,5 @@
 import React, { Component } from 'react'
 import './App.css'
-import Navbar from './Navbar'
-// import Link from 'react-router'
-// import beth from './beth-photo.jpg'
-
-
 
 class About extends Component {
   render() {

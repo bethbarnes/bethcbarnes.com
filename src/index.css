@@ -207,7 +207,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* height: 500px; */
+  background-color: #fcfeff
 }
 
 .project-header {
