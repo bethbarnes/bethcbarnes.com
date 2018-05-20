@@ -6,7 +6,6 @@ import projectData from './Data.js'
 
 class Projects extends Component {
   render() {
-    console.log('data', projectData)
     return (
       <div className="projects">
         <div className="inner-white-container gray-border" >
