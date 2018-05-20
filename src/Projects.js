@@ -8,7 +8,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="projects">
-        <div className="inner-white-container gray-border" >
+        <div className="projects-inner-white-container gray-border" >
         {projectData.map((project)=> {
           return (
             <div key={project.id}className="project-container gray-border" >
@@ -39,11 +39,11 @@ class Projects extends Component {
                 alt='network alumni'/>
             </div>
             <div className="proj-links-container" >
-            <a className= "test" href={project.github}>
+            <a className= "project-links" href={project.github}>
               Github</a>
-              <a className= "test" href={project.deployed}>
+              <a className= "project-links" href={project.deployed}>
               Deployed Site</a>
-              <a className= "test" href={project.video}>
+              <a className= "project-links" href={project.video}>
               Video Presentation</a>
             </div>
           </div>

@@ -22,7 +22,7 @@ class About extends Component {
         In my free time, I like to get involved in the tech community, volunteering or attending events from organizations like Girl Develop it and React NYC. I'm also a co-organizer of HackerNest's monthly Tech Socials, which is part of HackerNest's mission to promote tech communities across the world.  If you'd like to get in touch, feel free to contact me!
         <br/>
         <br/>
-          -Beth 
+          - Beth 
           </p>
         </div>
       </div>

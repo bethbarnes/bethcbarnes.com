@@ -5,8 +5,6 @@
 
 @import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 
-/* #eff2f7 */
-.projects,
 .home,
 .contact,
 .about {
@@ -16,11 +14,27 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* height: 100vh; */
   min-height: 100vh;
   min-width: 100vw;
   z-index: -1;
 }
+
+.projects {
+  background-color: #85C9B1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-repeat: repeat;
+}
+
+/* TODO: change this method */
+html {
+  background-color: #85C9B1;
+}
+
 
 body {
   margin: 0;
@@ -73,9 +87,6 @@ body {
   font-size: 78px;
   margin-bottom: 0px;
   margin-top: 0px;
-  /* position: absolute;
-  top: 100px;
-  left: 50px; */
 }
 
 .icon-container {
@@ -120,7 +131,6 @@ body {
 }
 .front-btn:hover {
   background: #e7e7e7;
-  /* color: white; */
 }
 
 .front-page-profile-image {
@@ -138,6 +148,16 @@ body {
   background-color: #eff2f7;
   width: 80vw;
   height: 85vh;
+  position: relative;
+  border-radius: 7px;
+}
+
+.projects-inner-white-container {
+  background-color: #eff2f7;
+  width: 80vw;
+  height: auto;
+  margin-top: 55px;
+  margin-bottom: 55px;
   position: relative;
   border-radius: 7px;
 }
@@ -240,13 +260,7 @@ body {
   color: black
 }
 
-.icon-container {
-  /* position: absolute;
-  top: 230px;
-  left: 270px; */
-}
-
-.test {
+.project-links {
   text-align: center;
   display: inline;
   margin: 0px 10px 20px 10px;
