@@ -21,7 +21,7 @@ const projectData =[
   {
     id: 3,
     name: "Personal Website",
-    description: "I created my personal website in order to practice using HTML and CSS, and to create a hub for my projects, and contact information",
+    description: "I created my personal website in order to practice using HTML and CSS, and to create a hub for my projects and contact information",
     technologies: "React, HTML, CSS",
     github: 'https://github.com/bethbarnes/beth-page',
     deployed: 'https://bethcbarnes.com',
