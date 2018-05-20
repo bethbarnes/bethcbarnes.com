@@ -1,16 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+# bethcbarnes.com
 
-# bethcbarnes.com - Personal Portfolio Website
-
-Personal website
+Personal Portfolio Website
 
 ## Motivation
 
-I created this website in order to practice using HTML and CSS, and to create a hub for my projects and contact information
-
-## Deployment
-
-This website was deployed using Google Firebase
+I created this website in order to practice using HTML and CSS, and to create a hub for my projects and contact information.
 
 ## Built With
 
@@ -18,4 +12,8 @@ This website was deployed using Google Firebase
 * React
 * HTML
 * CSS
+
+## Deployment
+
+This website was deployed using Google Firebase.
 
