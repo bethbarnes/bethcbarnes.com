@@ -1,4 +1,4 @@
-#bethcbarnes.com
+# bethcbarnes.com
 
 Personal Portfolio Website
 
