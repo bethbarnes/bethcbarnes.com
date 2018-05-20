@@ -1,19 +1,19 @@
-#:woman_technologist: bethcbarnes.com
+# :woman_technologist: bethcbarnes.com
 
 Personal Portfolio Website
 
-##:thought_balloon: Motivation
+## :thought_balloon: Motivation
 
 I created this website in order to practice using HTML and CSS, and to create a hub for my projects and contact information.
 
-##:hammer: Built With
+## :hammer: Built With
 
 * Javascript
 * React
 * HTML
 * CSS
 
-##:rocket: Deployment
+## :rocket: Deployment
 
 This website was deployed using Google Firebase.
 
