@@ -10,11 +10,14 @@ class App extends Component {
       <div className="App">
       <BrowserRouter>
         <div>
-          <Navbar />
+      {/* TODO: change how Navbar is being rendered here  */}
           <Route exact path='/' component={Home} />
-          <Route path='/about' component={About}/>
+          <Route path='/about' component={About} />
+          <Route path='/about' component={Navbar}/>
           <Route path='/projects' component={Projects} />
+          <Route path='/projects' component={Navbar}/>
           <Route path='/contact' component={Contact} />
+          <Route path='/contact' component={Navbar}/>
         </div>
       </ BrowserRouter>
       </div>
