@@ -1,12 +1,12 @@
-# :woman_technologist: bethcbarnes.com
+#bethcbarnes.com
 
 Personal Portfolio Website
 
-## :thought_balloon: Motivation
+## :woman_technologist: Motivation
 
 I created this website in order to practice using HTML and CSS, and to create a hub for my projects and contact information.
 
-## :hammer: Built With
+## :hammer_and_pick: Built With
 
 * Javascript
 * React
