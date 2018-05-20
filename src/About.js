@@ -9,7 +9,7 @@ import Navbar from './Navbar'
 class About extends Component {
   render() {
     return (
-      <div className="About">
+      <div className="about">
         <div className="inner-white-container gray-border">
           <h2 className="about-header"> {'// Hello World'} </h2>
           <img className="desktop-image gray-border"
