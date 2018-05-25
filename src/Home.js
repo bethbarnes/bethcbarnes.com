@@ -7,7 +7,9 @@ import { Link } from 'react-router-dom'
 //TODO: some sort of fade in with my name and pick and stuff
 
 class Home extends Component {
+
   render() {
+    // console.log(this.props, props)
     return (
       <div className="home">
         <div className="name-picture-container">
