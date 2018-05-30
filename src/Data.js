@@ -10,6 +10,13 @@ const projectData =[
     video: 'https://www.youtube.com/watch?v=jdGSlqeM_xM',
   },
   {
+    id: 4,
+    name: "LearnDot",
+    description: "Working with large production code base, my role was to convert components from AngularJS to React",
+    technologies: "AngularJS, React, HTML, CSS, mongoDB",
+    github: 'https://github.com/FullstackAcademy/newlearn',
+  },
+  {
     id: 2,
     name: "ApARtment Picker",
     description: "ApARtment Picker is a React Native mobile app for viewing apartments in Augmented Reality. The app was built using ViroReact, a platform for building AR/VR apps in React Native. My role was to use ViroReact to render 3D Portals in Augmented Reality, which users can walk through to view 360 degree images of apartments that matched their search criteria.",
@@ -26,6 +33,7 @@ const projectData =[
     github: 'https://github.com/bethbarnes/beth-page',
     deployed: 'https://bethcbarnes.com',
   },
+
 ]
 
 export default projectData
