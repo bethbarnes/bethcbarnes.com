@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 //Projects: format links and add media
 //misc: add credit at the bottom
 //new font
+//make links open in new tab
 
 class Home extends Component {
   constructor(){
