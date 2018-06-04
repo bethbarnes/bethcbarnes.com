@@ -143,7 +143,7 @@ body {
   border-width: 2px;
   border-color: #c7c9cc;
 }
-.front-btn{
+.front-btn1{
   animation: fadein 3s;
   animation-delay: 10s;
   -moz-animation: fadein 3s; /* Firefox */
@@ -151,12 +151,16 @@ body {
   -o-animation: fadein 3; /* Opera */
 }
 
-.front-page-profile-image1 {
-  animation: fadein 3s;
-  -moz-animation: fadein 3s; /* Firefox */
-  -webkit-animation: fadein 3s; /* Safari and Chrome */
-  -o-animation: fadein 3; /* Opera */
+.about,
+.projects,
+.contact {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
 }
+
+
 @keyframes fadein {
   from {
       opacity:0;
@@ -211,6 +215,7 @@ body {
 
 .large-name1 {
   font-size: 50px;
+  animation:  blink-caret .85s step-end infinite;
 }
 
 .large-name {
