@@ -14,6 +14,9 @@ class Contact extends Component {
             <a href= "https://www.linkedin.com/in/bethcbarnes/" >
               <i className="fa fa-linkedin-square small-icon"></i>
             </a>
+            <a href= "https://www.linkedin.com/in/bethcbarnes/" >
+              <i className="fab fa-medium-m small-icon"></i>
+            </a>
           </div>
         </div>
       <div className="contact-container" >

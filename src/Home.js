@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import { Link } from 'react-router-dom'
-//TODO: add transition to next pages
-//add shadow on hover or transition duration to buttons
 
-//TODO: some sort of fade in with my name and pick and stuff
 
 class Home extends Component {
   constructor(){
@@ -13,15 +10,11 @@ class Home extends Component {
   }
 
   componentDidMount(){
-   /* The speed/duration of the effect in milliseconds */
-    console.log('mounted')
 
     var i = 0;
     var txt = 'Beth Barnes'; /* The text */
     var speed = 150;
-    function typeWriter(){
-      console.log('helloe')
-
+  function typeWriter(){
         if (i < txt.length) {
           document.getElementById("demo").innerHTML += txt.charAt(i);
           i++;
