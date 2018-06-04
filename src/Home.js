@@ -7,6 +7,30 @@ import { Link } from 'react-router-dom'
 //TODO: some sort of fade in with my name and pick and stuff
 
 class Home extends Component {
+  constructor(){
+    super()
+
+  }
+
+  componentDidMount(){
+   /* The speed/duration of the effect in milliseconds */
+    console.log('mounted')
+
+    var i = 0;
+    var txt = 'Beth Barnes'; /* The text */
+    var speed = 150;
+    function typeWriter(){
+      console.log('helloe')
+
+        if (i < txt.length) {
+          document.getElementById("demo").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+  typeWriter();
+  }
+
 
   render() {
     return (
@@ -19,14 +43,13 @@ class Home extends Component {
             />
           </div>
           <div className="name-picture-item">
-            <h5 className="large-name">
-              {'// Beth Barnes'} </h5>
+            <h5 id="demo" className="large-name1">
+              {'//'} </h5>
           </div>
         </div>
         <div className="btn-container">
         <Link to='./about'>
-          <button className="front-btn">
-          About</button>
+          <button className="front-btn">About</button>
         </Link>
         <Link to='./projects'>
           <button className="front-btn">Projects</button>
