@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom'
 class Home extends Component {
 
   render() {
-    // console.log(this.props, props)
     return (
       <div className="home">
         <div className="name-picture-container">
