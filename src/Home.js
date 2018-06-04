@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 // Contact: add hover feature to icons
 //Projects: format links and add media
 //misc: add credit at the bottom
+//new font
 
 class Home extends Component {
   constructor(){
