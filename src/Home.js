@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import './App.css'
 import { Link } from 'react-router-dom'
 
+//TODO: Navbar: make current page remain highlighted
+// Contact: add hover feature to icons
+//Projects: format links and add media
+//misc: add credit at the bottom
 
 class Home extends Component {
   constructor(){
@@ -15,14 +19,14 @@ class Home extends Component {
     var txt = 'Beth Barnes'; /* The text */
     var speed = 150;
   function typeWriter(){
-        if (i < txt.length) {
-          document.getElementById("demo").innerHTML += txt.charAt(i);
-          i++;
-          setTimeout(typeWriter, speed);
-        }
-      }
-  typeWriter();
+    if (i < txt.length) {
+      document.getElementById("demo").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
   }
+  typeWriter();
+}
 
 
   render() {
