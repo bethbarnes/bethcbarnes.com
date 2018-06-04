@@ -279,7 +279,7 @@ to{width: 24em;}
   margin: 5px 15px 5px 0px;
 }
 
-.navbar-link:visited {
+a {
   text-decoration: none;
   color:#000;
 }
