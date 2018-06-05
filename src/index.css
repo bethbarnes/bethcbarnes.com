@@ -3,6 +3,10 @@
   border-width: 2px;
 } */
 
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
 @import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 
 .home,
