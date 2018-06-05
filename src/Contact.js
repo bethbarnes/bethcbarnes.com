@@ -8,13 +8,13 @@ class Contact extends Component {
         <div className="contact-container">
           <h1 className="contact-text" >CONTACT</h1>
           <div className="icon-container">
-            <a href="https://github.com/bethbarnes" >
+            <a href="https://github.com/bethbarnes" target="_blank">
               <i className="fa fa-github small-icon"></i>
             </a>
-            <a href= "https://www.linkedin.com/in/bethcbarnes/" >
+            <a href= "https://www.linkedin.com/in/bethcbarnes/" target="_blank">
               <i className="fa fa-linkedin-square small-icon"></i>
             </a>
-            <a href= "https://medium.com/@elizabeth7205" >
+            <a href= "https://medium.com/@elizabeth7205" target="_blank">
               <i className="fab fa-medium-m small-icon"></i>
             </a>
           </div>

@@ -39,14 +39,14 @@ class Projects extends Component {
             </div> : <div></div>}
 
             <div className="proj-links-container" >
-            <a className= "project-links" href={project.github}>
+            <a className= "project-links" href={project.github} target="_blank">
               Github</a>
             {project.deployed
-              ? <a className= "project-links" href={project.deployed}>
+              ? <a className= "project-links" href={project.deployed} target="_blank">
               Deployed Site</a>
               : <div></div>}
             {project.video
-            ? <a className= "project-links" href={project.video}>
+            ? <a className= "project-links" href={project.video} target="_blank">
               Video Presentation</a>
             : <div></div>}
             </div>
