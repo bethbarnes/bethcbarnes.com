@@ -9,13 +9,13 @@ class Contact extends Component {
           <h1 className="contact-text" >CONTACT</h1>
           <div className="icon-container">
             <a href="https://github.com/bethbarnes" target="_blank">
-              <i className="fa fa-github small-icon"></i>
+              <i className="fa fa-github small-icon grow"></i>
             </a>
             <a href= "https://www.linkedin.com/in/bethcbarnes/" target="_blank">
-              <i className="fa fa-linkedin-square small-icon"></i>
+              <i className="fa fa-linkedin-square small-icon grow"></i>
             </a>
             <a href= "https://medium.com/@elizabeth7205" target="_blank">
-              <i className="fab fa-medium-m small-icon"></i>
+              <i className="fab fa-medium-m small-icon grow"></i>
             </a>
           </div>
         </div>

@@ -42,8 +42,6 @@ const projectData =[
     github: "http://picklr.herokuapp.com/",
     deployed: "http://picklr.herokuapp.com/"
   },
-
-
 ]
 
 export default projectData
