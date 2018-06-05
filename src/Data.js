@@ -38,7 +38,9 @@ const projectData =[
     name: "Cucumber",
     description: "Cucumber is an E-commerce grocery website that I built as part of a group project. Cucumber’s frontend was built using modular React components and styled with Material UI and CSS. We built the backend using Express.JS, Sequelize and PostgreSQL and deployed the app on heroku. My main role was to create a Cart functionality which lived in the state, was managed through React-Redux and persisted over sessions using local storage.",
     technologies: "Technologies used: React.JS, React-Redux, Sequelize, Express.JS, PostgreSQL, CSS, HTML, Material UI, Heroku, Google OAuth",
-    github: "http://picklr.herokuapp.com/"
+    images: ['images/cucumber-all-products.png', 'images/cucumber-order-confirm.png', 'images/cucumber-single-product.png'],
+    github: "http://picklr.herokuapp.com/",
+    deployed: "http://picklr.herokuapp.com/"
   },
 
 
