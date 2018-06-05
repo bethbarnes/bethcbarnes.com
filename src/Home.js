@@ -3,7 +3,7 @@ import './App.css'
 import { Link } from 'react-router-dom'
 
 //TODO: Navbar: make current page remain highlighted
-// Contact: add hover feature to icons
+//Contact: add hover feature to icons
 //Projects: format links and add media
 //misc: add credit at the bottom
 //new font
