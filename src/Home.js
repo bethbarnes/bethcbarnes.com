@@ -35,7 +35,7 @@ class Home extends Component {
         <div className="name-picture-container">
           <div className="name-picture-item">
             <img className="front-page-profile-image gray-border"
-              src='/beth-photo.jpg'
+              src='/images/beth-photo.jpg'
               alt="beth-profile"
             />
           </div>

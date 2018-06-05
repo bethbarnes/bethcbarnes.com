@@ -9,7 +9,7 @@ class About extends Component {
           <h2 className="about-header"> {'// Hello World'} </h2>
           <img className="desktop-image gray-border"
                 alt="desktop"
-                src="/desktop-image.jpg"/>
+                src="/images/desktop-image.jpg"/>
           <p className="about-me-text gray-border">
           A little bit about me: I'm a Javascript developer, cat person and foreign language enthusiast! My interest in tech began when I was in Beijing, studying Mandarin Chinese and had an amazing internship at an iOS app start-up. From there, I worked in sales at a software company and then learned Javascript at Fullstack Academy of Code. I'm most experienced with Javascript, Node.js, React, Redux and Express, but I love experimenting with new technologies like React Native, Google Firebase and ViroReact.
         <br/>
