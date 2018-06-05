@@ -45,13 +45,13 @@ class Home extends Component {
         </div>
         <div className="btn-container">
         <Link to='./about'>
-          <button className="front-btn">About</button>
+          <button className="front-btn grow">About</button>
         </Link>
         <Link to='./projects'>
-          <button className="front-btn">Projects</button>
+          <button className="front-btn grow">Projects</button>
         </Link>
         <Link to='./contact' >
-          <button className="front-btn">Contact</button>
+          <button className="front-btn grow">Contact</button>
         </Link>
         </div>
       </div>

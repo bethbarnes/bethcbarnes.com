@@ -10,7 +10,7 @@ class Projects extends Component {
         <div className="projects-inner-white-container gray-border" >
         {projectData.map((project)=> {
           return (
-            <div key={project.id}className="project-container gray-border" >
+            <div key={project.id}className="project-container gray-border shadow" >
             <div className="project-header">
               <h1 className="project-title">{project.name}</h1>
             </div>
