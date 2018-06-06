@@ -7,10 +7,10 @@ class Projects extends Component {
   render() {
     return (
       <div className="projects">
-        <div className="projects-inner-white-container gray-border" >
+        <div className="projects-inner-white-container" >
         {projectData.map((project)=> {
           return (
-            <div key={project.id}className="project-container gray-border shadow" >
+            <div key={project.id}className="project-container shadow" >
             <div className="project-header">
               <h1 className="project-title">{project.name}</h1>
             </div>

@@ -9,9 +9,7 @@ class App extends Component {
     return (
       <div className="App">
       <BrowserRouter >
-      {/* could try to pass history here  */}
         <div>
-      {/* TODO: change how Navbar is being rendered here  */}
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
           <Route path='/about' component={Navbar}/>
