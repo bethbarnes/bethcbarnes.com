@@ -30,7 +30,7 @@ class Projects extends Component {
               {project.images.map((image)=>{
                 return (<img
                 key={image}
-                className="proj-image gray-border"
+                className="proj-image "
                 src={image}
                 alt={`${project.name} + ${image}`}/>)
               })}

@@ -24,7 +24,7 @@
 }
 
 .projects {
-  background-color: #85C9B1;
+  background-color:#ADDABC;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -279,7 +279,6 @@ a {
 
 
 .projects-inner-white-container {
-  /* background-color: #eff2f7; */
   width: 80vw;
   height: auto;
   margin-top: 25px;
@@ -297,8 +296,10 @@ a {
 }
 
 .project-header {
-  background-color: #b8c1d1;
+  background-color: #F4F5CD;
   height: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .project-title {
