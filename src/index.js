@@ -8,9 +8,10 @@ import Home from './Home'
 import About from './About'
 import Projects from './Projects'
 import Navbar from './Navbar'
-import Contact from './Contact';
+import Contact from './Contact'
+import Resume from './Resume'
 
-export { Home, About, Projects, Navbar, Contact}
+export { Home, About, Projects, Navbar, Contact, Resume}
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

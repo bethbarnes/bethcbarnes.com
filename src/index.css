@@ -133,9 +133,9 @@ body {
   cursor: pointer;
   border-radius: 5px;
 }
-.front-btn:hover {
+/* .front-btn:hover {
   background: #e7e7e7;
-}
+} */
 
 .front-page-profile-image {
   border-radius: 50%;
