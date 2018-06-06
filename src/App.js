@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
-import { Home, About, Projects, Contact, Navbar, Resume} from './index'
+import { Home, About, Projects, Contact, Navbar} from './index'
 import { BrowserRouter, Route } from 'react-router-dom'
 
 class App extends Component {
@@ -19,7 +19,6 @@ class App extends Component {
           <Route path='/projects' component={Navbar}/>
           <Route path='/contact' component={Contact} />
           <Route path='/contact' component={Navbar}/>
-          <Route path='/resume' component={Resume}/>
         </div>
       </ BrowserRouter>
       </div>
