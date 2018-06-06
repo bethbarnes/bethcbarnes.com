@@ -17,7 +17,8 @@ class About extends Component {
         <br/>
         <br/>
         In my free time, I like to get involved in the tech community, volunteering or attending events from organizations like Girl Develop it and React NYC. I'm also a co-organizer of HackerNest's monthly Tech Socials, which is part of HackerNest's mission to promote tech communities across the world.  If you'd like to get in touch, feel free to contact me!
-
+        <br/>
+        <br/>
         I'm currently a Teaching Fellow and Engineer at Fullstack Academy, and I'm looking for new opportunities in softare engineering (<a className="resume-link" href="/resume.pdf" target="blank" >resume</a>)
         <br/>
         <br/>

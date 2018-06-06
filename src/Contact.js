@@ -28,6 +28,11 @@ class Contact extends Component {
           <h4 className="contact-types"> PHONE: </h4>
           <h3>315.520.4376</h3>
         </div>
+        <div className="contact-info-container" >
+          <h4 className="contact-types"> RESUME: </h4>
+          <a href="/resume.pdf" target="blank" >
+          <h3>click here</h3></a>
+        </div>
       </div>
       </div>
     )
