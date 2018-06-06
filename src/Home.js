@@ -14,7 +14,7 @@ class Home extends Component {
   componentDidMount(){
 
     var i = 0;
-    var txt = 'Beth Barnes'; /* The text */
+    var txt = 'Beth Barnes';
     var speed = 150;
   function typeWriter(){
     if (i < txt.length) {
@@ -32,7 +32,7 @@ class Home extends Component {
       <div className="home">
         <div className="name-picture-container">
           <div className="name-picture-item">
-            <img className="front-page-profile-image gray-border"
+            <img className="front-page-profile-image shadow"
               src='/images/beth-photo.jpg'
               alt="beth-profile"
             />
