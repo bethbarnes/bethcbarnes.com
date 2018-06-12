@@ -12,7 +12,7 @@
 .home,
 .contact,
 .about {
-  background: linear-gradient(#85C9B1, #fcf8cf);
+  background: linear-gradient(to bottom right,#85C9B1, #fcf8cf);
   background-size: contain;
   display: flex;
   flex-direction: column;
