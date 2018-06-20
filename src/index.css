@@ -12,9 +12,7 @@
 
 /* MOBILE AND TABLET */
 @media screen and (max-width: 960px) {
-  html {
-    background-color: red;
-  }
+
   .btn-container {
     display: flex;
     flex-direction: column;
@@ -25,13 +23,26 @@
     margin-bottom: 20px;
   }
 
+  .name-picture-container {
+    padding: 0;
+    /* margin: 30px 0px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .name-picture-item {
+    padding: 0px
+  }
+
+  .large-name1 {
+    margin: 0px;
+  }
+
 }
 
 /* DESKTOP */
 @media screen and (min-width: 961px) {
-  html {
-    background-color: #85C9B1;
-  }
 
   .btn-container {
     display: flex;
@@ -43,6 +54,17 @@
     margin: 30px 50px;
   }
 
+  .name-picture-container {
+    padding: 0;
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .name-picture-item {
+    padding: 20px
+  }
 
 }
 
@@ -73,9 +95,9 @@
 }
 
 /* TODO: change this method */
-/* html {
-  background-color: #85C9B1; */
-/* } */
+html {
+  background-color: #85C9B1;
+}
 
 
 body {
@@ -268,18 +290,6 @@ to{width: 24em;}
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: black; }
-}
-
-.name-picture-container {
-  padding: 0;
-  margin: 30px 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.name-picture-item {
-  padding: 20px
 }
 
 .navbar {
