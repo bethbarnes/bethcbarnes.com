@@ -56,8 +56,18 @@
   }
 
   .project-container {
-
+    margin: 32px 0px 10px !important
   }
+  .proj-section-title {
+    margin-bottom: 0px;
+  }
+
+  .projects-inner-white-container {
+    width: 90vw !important;
+  }
+
+
+
 
 }
 
@@ -111,6 +121,9 @@
     /* PROJECTS */
     .proj-desc-container {
       flex-direction: row;
+    }
+    .project-description {
+      margin-left: 20px
     }
 }
 
@@ -389,7 +402,6 @@ a {
 
 .project-description {
   text-align: left;
-  margin-left: 20px;
 }
 
 .proj-images-container {
