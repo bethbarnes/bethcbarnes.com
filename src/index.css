@@ -24,11 +24,7 @@
   }
 
   .name-picture-container {
-    padding: 0;
-    /* margin: 30px 0px; */
-    display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 
   .name-picture-item {
@@ -36,7 +32,8 @@
   }
 
   .large-name1 {
-    margin: 0px;
+    font-size: 40px !important;
+    margin: 10px 0px 15px;
   }
 
 }
@@ -55,17 +52,20 @@
   }
 
   .name-picture-container {
-    padding: 0;
     margin: 30px 0px;
-    display: flex;
     flex-direction: row;
-    justify-content: center;
   }
 
   .name-picture-item {
     padding: 20px
   }
 
+}
+
+.name-picture-container {
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 
