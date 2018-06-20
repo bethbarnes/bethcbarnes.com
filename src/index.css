@@ -41,6 +41,12 @@
     display: none;
   }
 
+  /* ABOUT */
+  .about-header {
+    font-size: 37px;
+    z-index: 1;
+  }
+
 
 
 }
@@ -69,6 +75,13 @@
   }
 
   /* ABOUT  */
+  .about-header {
+    font-size: 65px;
+    left: 75px;
+    position: absolute;
+    z-index: 1;
+  }
+
   .desktop-image {
     width: 650px;
     position: absolute;
@@ -136,12 +149,7 @@ body {
   font-family: sans-serif;
 }
 
-.about-header {
-  font-size: 65px;
-  left: 75px;
-  position: absolute;
-  z-index: 1;
-}
+
 
 
 
