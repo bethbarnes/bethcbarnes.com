@@ -9,6 +9,44 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
 @import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 
+
+/* MOBILE AND TABLET */
+@media screen and (max-width: 960px) {
+  html {
+    background-color: red;
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .front-btn {
+    margin-bottom: 20px;
+  }
+
+}
+
+/* DESKTOP */
+@media screen and (min-width: 961px) {
+  html {
+    background-color: #85C9B1;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .front-btn {
+    margin: 30px 50px;
+  }
+
+
+}
+
+
 .home,
 .contact,
 .about {
@@ -35,9 +73,9 @@
 }
 
 /* TODO: change this method */
-html {
-  background-color: #85C9B1;
-}
+/* html {
+  background-color: #85C9B1; */
+/* } */
 
 
 body {
@@ -65,11 +103,7 @@ body {
   border-radius: 5px;
 }
 
-.btn-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+
 
 .contact {
   height: 500px;
@@ -123,19 +157,14 @@ body {
 }
 
 .front-btn {
-  /* border: 2px solid black; */
   background-color: white;
   color: black;
   width: 150px;
   height: 60px;
-  margin: 30px 50px;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 5px;
 }
-/* .front-btn:hover {
-  background: #e7e7e7;
-} */
+
 
 .front-page-profile-image {
   border-radius: 50%;
