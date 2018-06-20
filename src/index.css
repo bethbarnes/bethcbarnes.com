@@ -10,7 +10,7 @@
 @import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 
 
-/* MOBILE AND TABLET */
+/* ------------------MOBILE AND TABLET------------------ */
 @media screen and (max-width: 960px) {
 
   /* HOME PAGE */
@@ -37,21 +37,31 @@
     margin: 10px 0px 15px;
   }
 
+  /* ABOUT */
+  .about-header {
+    font-size: 37px;
+  }
+
   .desktop-image {
     display: none;
   }
 
-  /* ABOUT */
-  .about-header {
-    font-size: 37px;
-    z-index: 1;
+  .about-me-text {
+    font-size: 12px;
   }
 
+  /* PROJECTS */
+  .proj-desc-container {
+    flex-direction: column;
+  }
 
+  .project-container {
+
+  }
 
 }
 
-/* DESKTOP */
+/* ------------------DESKTOP------------------ */
 @media screen and (min-width: 961px) {
 
   /* HOME PAGE */
@@ -89,21 +99,22 @@
     right: 35px;
     opacity: 0.8;
   }
+
+  .about-me-text {
+    position: relative;
+    left: 50px;
+    top: 150px;
+    width: 750px;
+    font-size: 18px;
+  }
+
+    /* PROJECTS */
+    .proj-desc-container {
+      flex-direction: row;
+    }
 }
 
-
-
-.about-me-text {
-  position: relative;
-  left: 50px;
-  top: 150px;
-  width: 750px;
-  background-color: #eff2f7;
-  font-size: 18px;
-  text-align: left;
-  padding: 20px;
-  border-radius: 5px;
-}
+/* ----------------END MEDIA QUERY------------- */
 
 .name-picture-container {
   padding: 0;
@@ -132,9 +143,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  min-width: 100vw;
-  background-repeat: repeat;
+  /* min-height: 100vh;
+  min-width: 100vw; */
+  /* background-repeat: repeat; */
 }
 
 /* TODO: change this method */
@@ -149,11 +160,12 @@ body {
   font-family: sans-serif;
 }
 
-
-
-
-
-
+.about-me-text {
+  background-color: #eff2f7;
+  text-align: left;
+  padding: 20px;
+  border-radius: 5px;
+}
 
 .contact {
   height: 500px;
@@ -372,7 +384,6 @@ a {
 
 .proj-desc-container {
   display: flex;
-  flex-direction: row;
   margin: 0px 20px
 }
 
