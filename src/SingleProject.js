@@ -12,36 +12,40 @@ class SingleProject extends Component {
   }
 
 
-  // plusDivs = (changeSlideNum) => {
-  //   console.log('this is n', changeSlideNum)
-  //   this.setState({
-  //     slideIndex: this.state.slideIndex + changeSlideNum
-  //   })
-  //   this.showDivs(this.state.slideIndex)
-  // }
+  plusDivs = (changeSlideNum) => {
+    console.log('this is n', changeSlideNum)
+    this.setState({
+      slideIndex: this.state.slideIndex + changeSlideNum
+    })
+    this.showDivs(this.state.slideIndex)
+  }
 
-  // showDivs = (currSlideIndex) => {
-  //   console.log('currSlideIndex in showDivs:', currSlideIndex)
-  //   let slides = document.getElementsByClassName("slide");
+//change the name of the id - interpolate some unique data - maybe the id
 
-  //   console.log('length', slides.length)
-  //   if (currSlideIndex > slides.length) {
-  //     console.log('slideIndex greater than length')
-  //     this.setState({slideIndex: 1})
-  //   }
-  //   if (currSlideIndex < 1) {
-  //     this.setState({slideIndex: slides.length})
-  //   }
-  //   for (let i = 0; i < slides.length; i++) {
-  //      slides[i].style.display = "none";
-  //   }
-  //   slides[this.state.slideIndex-1].style.display = "block";
-  // }
+//need to make this conditional - only do these things if it has images
 
-  // componentDidMount(){
+  showDivs = (currSlideIndex) => {
+    console.log('currSlideIndex in showDivs:', currSlideIndex)
+    let slides = document.getElementsByClassName(`slide-${this.props.data.id}`);
 
-  //   this.showDivs(this.state.slideIndex);
-  // }
+    console.log('length', slides.length)
+    if (currSlideIndex > slides.length) {
+      console.log('slideIndex greater than length')
+      this.setState({slideIndex: 1})
+    }
+    if (currSlideIndex < 1) {
+      this.setState({slideIndex: slides.length})
+    }
+    for (let i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slides[this.state.slideIndex-1].style.display = "block";
+  }
+
+  componentDidMount(){
+
+    this.showDivs(this.state.slideIndex);
+  }
 
   render() {
     console.log('PROPS', this.props)
@@ -68,7 +72,7 @@ class SingleProject extends Component {
           {data.images.map((image)=>{
             return (<img
             key={image}
-            className="proj-image slide"
+            className={`proj-image slide-${data.id}`}
             src={image}
             alt={`${data.name} + ${image}`}/>)
           })}
