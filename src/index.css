@@ -66,6 +66,18 @@
     width: 90vw !important;
   }
 
+  /* CONTACT */
+  .contact {
+    flex-direction: column !important;
+  }
+
+  .contact-text {
+    font-size: 60px !important;
+  }
+  .icon-container {
+    text-align: center !important;
+}
+
 
 
 
@@ -118,14 +130,21 @@
     font-size: 18px;
   }
 
-    /* PROJECTS */
-    .proj-desc-container {
-      flex-direction: row;
-    }
-    .project-description {
-      margin-left: 20px
-    }
+  /* PROJECTS */
+  .proj-desc-container {
+    flex-direction: row;
+  }
+  .project-description {
+    margin-left: 20px
+  }
+
+  /* CONTACT */
+  .contact {
+    flex-direction: row !important;
+  }
+
 }
+
 
 /* ----------------END MEDIA QUERY------------- */
 
@@ -180,12 +199,6 @@ body {
   border-radius: 5px;
 }
 
-.contact {
-  height: 500px;
-  width: 1000px;
-  flex-direction: row;
-  /* position: relative; */
-}
 
 .contact-container {
   margin: 0px 100px;
