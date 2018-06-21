@@ -17,7 +17,6 @@ class ProjectSlides extends Component {
     })
   }
 
-
   showDivs = (currSlideIndex) => {
     let slides = document.getElementsByClassName(`slide-${this.props.id}`);
 
@@ -34,9 +33,16 @@ class ProjectSlides extends Component {
       slides[this.state.slideIndex].style.display = "block";
     }
   }
+  componentDidMount(){
+    this.showDivs(this.state.slideIndex);
+  }
+
+  componentDidUpdate(){
+    this.showDivs(this.state.slideIndex);
+  }
 
   render() {
-    this.showDivs(this.state.slideIndex);
+
     let imageData = this.props.imageData
     return (
       <div className="proj-images-container">
