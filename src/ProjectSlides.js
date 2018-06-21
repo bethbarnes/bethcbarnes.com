@@ -20,20 +20,18 @@ class ProjectSlides extends Component {
     this.showDivs(this.state.slideIndex)
   }
 
-//change the name of the id - interpolate some unique data - maybe the id
-
-//need to make this conditional - only do these things if it has images
+//needt o make it so it goes through all images
 
   showDivs = (currSlideIndex) => {
-    console.log('currSlideIndex in showDivs:', currSlideIndex)
-    let slides = document.getElementsByClassName(`slide-${this.props.data.id}`);
+    console.log(`currSlideIndex in showDivsof :${this.props.id}`, currSlideIndex)
+    let slides = document.getElementsByClassName(`slide-${this.props.id}`);
 
     console.log('length', slides.length)
-    if (currSlideIndex > slides.length) {
+    if (currSlideIndex >= slides.length) {
       console.log('slideIndex greater than length')
       this.setState({slideIndex: 1})
     }
-    if (currSlideIndex < 1) {
+    if (currSlideIndex <= 1) {
       this.setState({slideIndex: slides.length})
     }
     for (let i = 0; i < slides.length; i++) {
@@ -48,16 +46,16 @@ class ProjectSlides extends Component {
   }
 
   render() {
-    console.log('PROPS', this.props)
-    let data = this.props.data
+    console.log(`STATE IN ${this.props.id}`, this.state)
+    let imageData = this.props.imageData
     return (
         <div className="proj-images-container">
-          {data.images.map((image)=>{
+          {imageData.map((image)=>{
             return (<img
             key={image}
-            className={`proj-image slide-${data.id}`}
+            className={`proj-image slide-${this.props.id}`}
             src={image}
-            alt={`${data.name} + ${image}`}/>)
+            alt={`${imageData.name} + ${image}`}/>)
           })}
           <button onClick={() => this.plusDivs(-1)}>left</button>
           <button onClick={() => this.plusDivs(1)}>right</button>

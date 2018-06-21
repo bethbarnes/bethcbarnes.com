@@ -26,8 +26,9 @@ class SingleProject extends Component {
             {data.technologies}
         </p>
         </div>
-        {data.images ? <ProjectSlides /> : <div></div>}
-          </div>
+
+        {data.images ? <ProjectSlides id={data.id} imageData={data.images}/> : <div></div>}
+
         <div className="proj-links-container" >
         <a className= "project-links" href={data.github} target="_blank" rel="noopener noreferrer">
           Github</a>
