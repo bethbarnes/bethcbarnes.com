@@ -16,17 +16,23 @@ class Projects extends Component {
   plusDivs = (changeSlideNum) => {
     console.log('this is n', changeSlideNum)
     this.setState({
-      slideIndex: this.state.slideIndex += changeSlideNum
+      slideIndex: this.state.slideIndex + changeSlideNum
     })
     this.showDivs(this.state.slideIndex)
   }
 
   showDivs = (currSlideIndex) => {
-    console.log('this is n in showDivs', currSlideIndex)
+    console.log('currSlideIndex in showDivs:', currSlideIndex)
     let slides = document.getElementsByClassName("slide");
 
-    if (currSlideIndex > slides.length) {this.slideIndex = 1}
-    if (currSlideIndex < 1) {this.slideIndex = slides.length}
+    console.log('length', slides.length)
+    if (currSlideIndex > slides.length) {
+      console.log('slideIndex greater than length')
+      this.setState({slideIndex: 1})
+    }
+    if (currSlideIndex < 1) {
+      this.setState({slideIndex: slides.length})
+    }
     for (let i = 0; i < slides.length; i++) {
        slides[i].style.display = "none";
     }
