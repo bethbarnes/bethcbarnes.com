@@ -3,9 +3,49 @@ import './App.css'
 import projectData from './Data.js'
 
 
-class Projects extends Component {
+class SingleProject extends Component {
+  constructor(props){
+    super(props)
+
+    this.state = {
+      slideIndex: 1
+    }
+  }
+
+
+  plusDivs = (changeSlideNum) => {
+    console.log('this is n', changeSlideNum)
+    this.setState({
+      slideIndex: this.state.slideIndex + changeSlideNum
+    })
+    this.showDivs(this.state.slideIndex)
+  }
+
+  showDivs = (currSlideIndex) => {
+    console.log('currSlideIndex in showDivs:', currSlideIndex)
+    let slides = document.getElementsByClassName("slide");
+
+    console.log('length', slides.length)
+    if (currSlideIndex > slides.length) {
+      console.log('slideIndex greater than length')
+      this.setState({slideIndex: 1})
+    }
+    if (currSlideIndex < 1) {
+      this.setState({slideIndex: slides.length})
+    }
+    for (let i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slides[this.state.slideIndex-1].style.display = "block";
+  }
+
+  componentDidMount(){
+
+    this.showDivs(this.state.slideIndex);
+  }
 
   render() {
+    console.log('STATE', this.state)
     return (
       <div className="projects">
         <div className="projects-inner-white-container" >
@@ -61,4 +101,4 @@ class Projects extends Component {
   }
 }
 
-export default Projects
+export default SingleProject
