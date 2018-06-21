@@ -4,34 +4,42 @@ import projectData from './Data.js'
 
 
 class Projects extends Component {
-  slideIndex = 1;
+  constructor(props){
+    super(props)
 
-  plusDivs = (n) => {
-    this.showDivs(this.slideIndex += n);
+    this.state = {
+      slideIndex: 1
+    }
   }
 
-  showDivs = (n) => {
-    'got to showdivs'
-    var i;
-    var x = document.getElementsByClassName("slide");
-    if (n > x.length) {this.slideIndex = 1}
-    if (n < 1) {this.slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
+
+  plusDivs = (changeSlideNum) => {
+    console.log('this is n', changeSlideNum)
+    this.setState({
+      slideIndex: this.state.slideIndex += changeSlideNum
+    })
+    this.showDivs(this.state.slideIndex)
+  }
+
+  showDivs = (currSlideIndex) => {
+    console.log('this is n in showDivs', currSlideIndex)
+    let slides = document.getElementsByClassName("slide");
+
+    if (currSlideIndex > slides.length) {this.slideIndex = 1}
+    if (currSlideIndex < 1) {this.slideIndex = slides.length}
+    for (let i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
     }
-    x[this.slideIndex-1].style.display = "block";
+    slides[this.state.slideIndex-1].style.display = "block";
   }
 
   componentDidMount(){
 
-
-    this.showDivs(this.slideIndex);
-
-
-
+    this.showDivs(this.state.slideIndex);
   }
 
   render() {
+    console.log('STATE', this.state)
     return (
       <div className="projects">
         <div className="projects-inner-white-container" >
