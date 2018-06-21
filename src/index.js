@@ -10,8 +10,9 @@ import Projects from './Projects'
 import Navbar from './Navbar'
 import Contact from './Contact'
 import SingleProject from './SingleProject'
+import ProjectSlide from './ProjectSlide'
 
-export { Home, About, Projects, Navbar, Contact, SingleProject }
+export { Home, About, Projects, Navbar, Contact, SingleProject, ProjectSlide }
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
