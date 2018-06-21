@@ -7,16 +7,17 @@ class ProjectSlides extends Component {
     super(props)
 
     this.state = {
-      slideIndex: 1
+      slideIndex: 0
     }
   }
 
 
   plusDivs = (changeSlideNum) => {
-    console.log('this is n', changeSlideNum)
+
     this.setState({
       slideIndex: this.state.slideIndex + changeSlideNum
     })
+    console.log('this is new slide', this.state.slideIndex)
     this.showDivs(this.state.slideIndex)
   }
 
@@ -25,19 +26,20 @@ class ProjectSlides extends Component {
   showDivs = (currSlideIndex) => {
     console.log(`currSlideIndex in showDivsof :${this.props.id}`, currSlideIndex)
     let slides = document.getElementsByClassName(`slide-${this.props.id}`);
-
+    console.log('slides: ', slides)
     console.log('length', slides.length)
-    if (currSlideIndex >= slides.length) {
+
+    if (currSlideIndex > slides.length-1) {
       console.log('slideIndex greater than length')
-      this.setState({slideIndex: 1})
-    }
-    if (currSlideIndex <= 1) {
-      this.setState({slideIndex: slides.length})
-    }
+      this.setState({slideIndex: 0})
+    }else if (currSlideIndex < 0) {
+      this.setState({slideIndex: slides.length-1})
+    }else {
     for (let i = 0; i < slides.length; i++) {
        slides[i].style.display = "none";
     }
-    slides[this.state.slideIndex-1].style.display = "block";
+    slides[this.state.slideIndex].style.display = "block";
+  }
   }
 
   componentDidMount(){
