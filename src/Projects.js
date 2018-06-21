@@ -30,7 +30,7 @@ class Projects extends Component {
               {project.images.map((image)=>{
                 return (<img
                 key={image}
-                className="proj-image "
+                className="proj-image slide"
                 src={image}
                 alt={`${project.name} + ${image}`}/>)
               })}
