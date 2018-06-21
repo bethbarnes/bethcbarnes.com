@@ -4,24 +4,28 @@ import projectData from './Data.js'
 
 
 class Projects extends Component {
+  slideIndex = 1;
 
-  showDivs(n) {
+  plusDivs = (n) => {
+    this.showDivs(this.slideIndex += n);
+  }
+
+  showDivs = (n) => {
+    'got to showdivs'
     var i;
     var x = document.getElementsByClassName("slide");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
+    if (n > x.length) {this.slideIndex = 1}
+    if (n < 1) {this.slideIndex = x.length}
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";
     }
-    x[slideIndex-1].style.display = "block";
-  }
-  plusDivs(n) {
-    showDivs(slideIndex += n);
+    x[this.slideIndex-1].style.display = "block";
   }
 
   componentDidMount(){
-    var slideIndex = 1;
-    showDivs(slideIndex);
+
+
+    this.showDivs(this.slideIndex);
 
 
 
@@ -57,8 +61,8 @@ class Projects extends Component {
                 src={image}
                 alt={`${project.name} + ${image}`}/>)
               })}
-
-              <button onClick={plusDivs(1)}>click</button>
+              <button onClick={() => this.plusDivs(-1)}>left</button>
+              <button onClick={() => this.plusDivs(1)}>right</button>
             </div> : <div></div>}
 
             <div className="proj-links-container" >
