@@ -6,7 +6,6 @@ import { ProjectSlides } from './index';
 class SingleProject extends Component {
 
   render() {
-    console.log('PROPS', this.props)
     let data = this.props.data
     return (
         <div key={data.id}
@@ -27,7 +26,17 @@ class SingleProject extends Component {
         </p>
         </div>
 
-        {data.images ? <ProjectSlides id={data.id} imageData={data.images}/> : <div></div>}
+        {data.images ? data.images.length > 1 ? <ProjectSlides id={data.id} imageData={data.images}/> :
+          <div className="proj-images-container">
+          <img
+            key={data.images[0]}
+            className={`proj-image slide-${this.props.id}`}
+            src={data.images[0]}
+            alt={`${data.images[0].name}`} />
+          </div>
+        : <div></div>
+        }
+
 
         <div className="proj-links-container" >
         <a className= "project-links" href={data.github} target="_blank" rel="noopener noreferrer">
