@@ -7,9 +7,6 @@ import { Link } from 'react-router-dom'
 //misc: add credit at the bottom
 //Home: change hover color of buttons
 class Home extends Component {
-  constructor(){
-    super()
-  }
 
   componentDidMount(){
 
