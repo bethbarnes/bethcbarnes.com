@@ -46,6 +46,8 @@ class ProjectSlides extends Component {
     let imageData = this.props.imageData
     return (
       <div className="proj-images-container">
+      <i class="fas fa-angle-left"
+      onClick={() => this.plusDivs(-1)}></i>
         {imageData.map((image) => {
           return (<img
             key={image}
@@ -53,8 +55,9 @@ class ProjectSlides extends Component {
             src={image}
             alt={`${imageData.name} + ${image}`} />)
         })}
-        <button onClick={() => this.plusDivs(-1)}>left</button>
-        <button onClick={() => this.plusDivs(1)}>right</button>
+        <i class="fas fa-angle-right"
+        onClick={() => this.plusDivs(1)}
+        ></i>
       </div>
     )
   }

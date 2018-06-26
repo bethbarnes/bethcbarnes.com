@@ -39,15 +39,16 @@ class SingleProject extends Component {
 
 
         <div className="proj-links-container" >
+
         <a className= "project-links" href={data.github} target="_blank" rel="noopener noreferrer">
-          Github</a>
+        <i class="fab fa-github"></i> GitHub</a>
         {data.deployed
           ? <a className= "project-links" href={data.deployed} target="_blank" rel="noopener noreferrer">
-          Deployed Site</a>
+<i class="fas fa-desktop"></i> Deployed Site</a>
           : <div></div>}
         {data.video
         ? <a className= "project-links" href={data.video} target="_blank" rel="noopener noreferrer">
-          Video Presentation</a>
+          <i class="fab fa-youtube"></i> Video Presentation</a>
         : <div></div>}
         </div>
       </div>
