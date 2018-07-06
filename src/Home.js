@@ -3,7 +3,6 @@ import './App.css'
 import { Link } from 'react-router-dom'
 
 //TODO: Navbar: make current page remain highlighted
-//Projects: make images enlarge
 //misc: add credit at the bottom
 //Home: change hover color of buttons
 class Home extends Component {
@@ -13,13 +12,13 @@ class Home extends Component {
     var i = 0;
     var txt = 'Beth Barnes';
     var speed = 150;
-  function typeWriter(){
-    if (i < txt.length) {
-      document.getElementById("demo").innerHTML += txt.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
+    function typeWriter(){
+      if (i < txt.length) {
+        document.getElementById("typing").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
     }
-  }
   typeWriter();
 }
 
@@ -34,8 +33,9 @@ class Home extends Component {
               alt="beth-profile"
             />
           </div>
+          {/* should try to add a vw width to these */}
           <div className="name-picture-item">
-            <h5 id="demo" className="large-name1">
+            <h5 id="typing" className="large-name1">
               {'//'} </h5>
           </div>
         </div>
