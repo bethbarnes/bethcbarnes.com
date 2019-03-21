@@ -11,8 +11,9 @@ import Navbar from './Navbar'
 import Contact from './Contact'
 import SingleProject from './SingleProject'
 import ProjectSlides from './ProjectSlides'
+import ResumePage from './Resume-page'
 
-export { Home, About, Projects, Navbar, Contact, SingleProject, ProjectSlides }
+export { Home, About, Projects, Navbar, Contact, SingleProject, ProjectSlides, ResumePage }
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

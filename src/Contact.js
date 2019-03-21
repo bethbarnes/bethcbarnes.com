@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './App.css'
 
 class Contact extends Component {
@@ -30,8 +31,9 @@ class Contact extends Component {
         </div>
         <div className="contact-info-container" >
           <h4 className="contact-types"> RESUME: </h4>
-          <a href="/resume.pdf" target="blank" >
-          <h3>click here</h3></a>
+          {/* <a href="/resume.pdf" target="blank" >
+          <h3>click here</h3></a> */}
+          <Link to="./resume" target="_blank">click here</Link>
         </div>
       </div>
       </div>

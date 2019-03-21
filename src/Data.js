@@ -47,7 +47,7 @@ const projectData =[
     name: "Calendar App",
     description: "A simple calendar web app for keeping track of events. Calendar renders accurately for each month and user can add, edit and delete events.",
     technologies: "Technologies used: React.JS, React-Redux, Sequelize, Express.JS, PostgreSQL, CSS, HTML, Heroku",
-    github: https: "//github.com/bethbarnes/calendar-app",
+    github: "https//github.com/bethbarnes/calendar-app",
     deployed: "https://beth-calendar-app.herokuapp.com/"
   },
 ]
