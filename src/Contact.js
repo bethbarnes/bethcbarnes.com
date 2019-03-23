@@ -33,7 +33,7 @@ class Contact extends Component {
           <h4 className="contact-types"> RESUME: </h4>
           {/* <a href="/resume.pdf" target="blank" >
           <h3>click here</h3></a> */}
-          <Link to="./resume" target="_blank">click here</Link>
+          <Link to="./resume" target="_blank">CLICK HERE</Link>
         </div>
       </div>
       </div>
